@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 600px;
+    min-height: 900px;
     height: 100vh;
     background: url("/source/img/intro.png") center no-repeat;
    -webkit-background-size: cover;
@@ -197,7 +197,7 @@ h1,h2,h3,h4,h5,h6{
     }
     /* Member */
     .member{
-        width:50%;
+        width:80%;
         background-color: #8cc6ec;
         min-height: 100px;
         
@@ -209,8 +209,7 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 .member__image{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
     border-radius: 2px;
 }
 .member__text{
