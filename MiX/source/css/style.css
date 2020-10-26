@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .header__logo{
     width: 5%;
-
+    margin-left: 3%;
 }
 
 /* Menu */
@@ -55,6 +55,7 @@ h1,h2,h3,h4,h5,h6{
 .menu{
     text-transform: uppercase;
     font-size: 14px;
+    padding: 0 10px;
 
 }
 .menu__link{
@@ -62,9 +63,11 @@ h1,h2,h3,h4,h5,h6{
     vertical-align: top;
     text-decoration: none;
     margin: 0 15px;
+    margin-bottom: 5px;
     color:#FFF;
     transition: color .2s linear;
     position: relative;
+    
 }
 .menu__link:hover{
     color:#fce38a;
@@ -99,14 +102,16 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 600px;
     height: 100vh;
     background: url("/source/img/intro.png") center no-repeat;
    -webkit-background-size: cover;
+   padding: 0 10px;
 }
 
 .intro__inner{
     width: 100%;
-    max-width: 880px;
+    max-width: 950px;
     margin: 0 auto;
 
 }
@@ -124,36 +129,63 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-/* Team */
+/* Page */
 
-.team{
+.page{
     width: 100%;
     display: flex;
-
+    min-height: 600px;
     height: 100vh;
-    background: url("/source/img/team.png") center no-repeat;
+    background: url("/source/img/page.png") center no-repeat;
    -webkit-background-size: cover;
+   padding:0 10px;
 }
 
-.team__inner{
+.page__inner{
     width: 100%;
-    max-width: 880px;
+    max-width: 950px;
     margin: 0 auto;
 
 }
-.team__title{
+.page__title{
+    margin-top: 2%;
     font-size: 80px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: left;
     line-height: 1;
-
+    color: #333;
 }
 
-.team__text{
+.page__text{
     font-size: 30px;
 }
 
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+/* Member */
+.member{
+    flex-basis: 18%;
+    background-color: #2CA9E1;
+    min-height: 100px;
+    max-height: 500px;
+    padding:0 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.member__image{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 2px;
+}
+.member__text{
+    overflow: hidden;
+    
+}
 
 
 /* Footer */
