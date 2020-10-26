@@ -19,6 +19,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+
 /* Container */
 .container{
     width: 100%;
@@ -116,7 +117,7 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .intro__title{
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: left;
