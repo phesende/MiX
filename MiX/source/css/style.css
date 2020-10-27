@@ -20,6 +20,13 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
+
+/* Team-recruitment */
+.team-recruitment__title{
+    text-align: center;
+}
+
+
 /* Container */
 .container{
     width: 100%;
@@ -32,44 +39,55 @@ h1,h2,h3,h4,h5,h6{
 /* Header */
 
 .header{
-    padding-top: 30px;
+    padding-top: 50px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-
-
 }
 .header_inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 700px){
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu__link{
+        font-size: 0.9em;
+    }
+}
 .header__logo{
+    margin-top: 3%;
     width: 15%;
     margin-left: 3%;
 }
 
 /* Menu */
 
+
 .menu{
     text-transform: uppercase;
     font-size: 18px;
-    padding: 0 10px;
-
 }
+
+
 .menu__link{
+    
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
     margin: 0 15px;
     margin-bottom: 5px;
-    color:#FFF;
+    color:#fff;
     transition: color .2s linear;
-    position: relative;
-    
+    position: relative;        
 }
+
+
 .menu__link--partners{
     color:#e8a545;
 }
@@ -135,7 +153,7 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .intro__title{
-    margin-top: 3%;
+    margin-top: 8%;
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
@@ -261,6 +279,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .member__text{
     overflow: hidden;
+    font-size: 1.3em;
     
 }
 
