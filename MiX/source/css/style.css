@@ -132,7 +132,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .intro--projects{
-    min-height: 1500px;
+    min-height: 2000px;
     background: url("/source/img/projects__page1.png") center no-repeat;
     -webkit-background-size: cover;
 }
@@ -315,29 +315,29 @@ h1,h2,h3,h4,h5,h6{
 
 /* Gallery */
 @media(min-width:800px){
-    .gallery-row{
-        display: flex;
-        justify-content: space-around;
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         padding-top: 5%;
     }
 
     .gallery__image{
-        max-width: 500px;
+        margin-top: 3%;
+        max-width: 50%;
         border-radius: 5px;
     }
 
 }
 @media(max-width:800px){
-    .gallery-row{
+    .gallery{
         
         padding-top: 10%;
         padding-left: 15%;
     }
 
     .gallery__image{
-        margin-top: 3%;
-        margin-right: 5%;
-        max-width: 80%;
+        margin-top: 5%;
+        width: 80%;
     }
 
 }
