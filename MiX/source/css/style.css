@@ -126,22 +126,22 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     min-height: 900px;
     height: 100vh;
-    background: url("/source/img/header.png") center no-repeat;
+    background: url("../img/header.png") center no-repeat;
    -webkit-background-size: cover;
    padding: 0 10px;
 }
 
 .intro--projects{
-    min-height: 2000px;
-    background: url("/source/img/projects__page1.png") center no-repeat;
+    min-height: 1500px;
+    background: url("../img/projects__page1.png") center no-repeat;
     -webkit-background-size: cover;
 }
 .intro--partners{
-    background: url("/source/img/partners__page1.png") center no-repeat;
+    background: url("../img/partners__page1.png") center no-repeat;
     -webkit-background-size: cover;
 }
 .intro--contacts{
-    background: url("/source/img/contacts__page1.png") center no-repeat;
+    background: url("../img/contacts__page1.png") center no-repeat;
     -webkit-background-size: cover;
 }
 
@@ -186,7 +186,7 @@ h1,h2,h3,h4,h5,h6{
         display: flex;
         min-height: 900px;
         height: 100vh;
-        background: url("/source/img/page2.png") center no-repeat;
+        background: url("../img/page2.png") center no-repeat;
     -webkit-background-size: cover;
     padding:0 10px;
     }
@@ -315,29 +315,29 @@ h1,h2,h3,h4,h5,h6{
 
 /* Gallery */
 @media(min-width:800px){
-    .gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .gallery-row{
+        display: flex;
+        justify-content: space-around;
         padding-top: 5%;
     }
 
     .gallery__image{
-        margin-top: 3%;
-        max-width: 50%;
+        max-width: 500px;
         border-radius: 5px;
     }
 
 }
 @media(max-width:800px){
-    .gallery{
+    .gallery-row{
         
         padding-top: 10%;
         padding-left: 15%;
     }
 
     .gallery__image{
-        margin-top: 5%;
-        width: 80%;
+        margin-top: 3%;
+        margin-right: 5%;
+        max-width: 80%;
     }
 
 }
