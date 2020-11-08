@@ -488,6 +488,7 @@ h1,h2,h3,h4,h5,h6{
   .back {
       padding: 10px;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -601,7 +602,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 /* Gallery */
-@media(min-width:810px){
+@media(min-width:768px){
     .gallery{
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -613,7 +614,7 @@ h1,h2,h3,h4,h5,h6{
         margin-right: 90px;
     }
 }
-@media(max-width: 810px){
+@media(max-width: 768px){
     .gallery{
         display: grid;
         grid-template-columns: 1fr;
