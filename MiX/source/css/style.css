@@ -275,9 +275,34 @@ h1,h2,h3,h4,h5,h6{
     display: block;
     opacity: 1;
 }
+@media(min-width:767px){
+    .submenu{
+        visibility: hidden;
+        position: fixed;
+        padding: 0;
+        
+    }
 
+    li:hover .submenu {
+        background-color: #415ebb;
+        visibility: visible;
+    }
 
+    .submenu__link{
+        font-size: 15px;
+    }
 
+    .submenu__item{
+        padding: 0;
+        margin-left: 0px;
+    }
+}
+
+    
+.submenu li{
+    margin-left: 30px; 
+    list-style: square outside;
+ }
 
 /* Intro */
 
@@ -426,7 +451,6 @@ h1,h2,h3,h4,h5,h6{
         text-align: center;
     }
     .member__image{
-        height: 190px;
     }
 }
 @media(max-width:767px){
@@ -448,13 +472,13 @@ h1,h2,h3,h4,h5,h6{
     }
 
     .member__image{
-        max-height: 590px;
+        
     }
 }
 
 .member__image{
     width: 80%;
-    border-radius: 50000px;
+    border-radius: 50%;
     
     
 }

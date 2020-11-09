@@ -21,3 +21,29 @@ $(document).ready(function(){
                 return true;
             return false;
     }
+
+
+$(function(){
+    $("a[href^='#']").click(function(){
+            var _href = $(this).attr("href");
+            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            return false;
+    });
+});
+
+$(function(){
+    $("projects.html a[href^='#']").click(function(){
+            window.location.href = "projects.html";
+            var _href = $(this).attr("href");
+            console.log(_href);
+            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            return false;
+    });
+});
+
+$(document).ready(function() {
+    $('.header__link').click(function(event) {
+        $('.header__burger, .header__menu').removeClass('active');
+        $('body').removeClass('lock')
+    });
+});
