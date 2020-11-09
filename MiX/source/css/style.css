@@ -275,8 +275,22 @@ h1,h2,h3,h4,h5,h6{
     display: block;
     opacity: 1;
 }
+@media(min-width:767px){
+    .submenu{
+        visibility: hidden;
+        position: fixed;
+        
+    }
 
+    li:hover .submenu {
+        background-color: #415ebb;
+        visibility: visible;
+        text-align: left;}
 
+    .submenu__link{
+        font-size: 15px;
+    }
+}
 
 
 /* Intro */
@@ -426,7 +440,6 @@ h1,h2,h3,h4,h5,h6{
         text-align: center;
     }
     .member__image{
-        height: 190px;
     }
 }
 @media(max-width:767px){
@@ -448,13 +461,13 @@ h1,h2,h3,h4,h5,h6{
     }
 
     .member__image{
-        max-height: 590px;
+        
     }
 }
 
 .member__image{
     width: 80%;
-    border-radius: 50000px;
+    border-radius: 50%;
     
     
 }
