@@ -279,19 +279,30 @@ h1,h2,h3,h4,h5,h6{
     .submenu{
         visibility: hidden;
         position: fixed;
+        padding: 0;
         
     }
 
     li:hover .submenu {
         background-color: #415ebb;
         visibility: visible;
-        text-align: left;}
+    }
 
     .submenu__link{
         font-size: 15px;
     }
+
+    .submenu__item{
+        padding: 0;
+        margin-left: 0px;
+    }
 }
 
+    
+.submenu li{
+    margin-left: 30px; 
+    list-style: square outside;
+ }
 
 /* Intro */
 
